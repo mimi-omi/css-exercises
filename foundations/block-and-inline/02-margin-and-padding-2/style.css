@@ -4,24 +4,36 @@ body {
 }
 
 .card {
+  padding: 10px;
   width: 400px;
   background: #fff;
   margin: 16px auto;
 }
 
 .title {
+  padding: 10px;
   background: #e3f4ff;
+  font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  padding: 10px;
 }
 
 .button-container {
   background: #e3f4ff;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  /* https://stackoverflow.com/questions/8312354/is-there-any-difference-between-margin-0-auto-and-margin-auto */
+  /* margin: auto; */
+  margin: 0 auto;
+  padding: 10px 30px;
 }
