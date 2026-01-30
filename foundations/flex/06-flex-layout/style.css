@@ -5,6 +5,34 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.header,
+.footer,
+.left-links,
+.right-links {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.footer {
+  background: #eee;
+  /* color: grey; */
 }
 
 img {
@@ -16,6 +44,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px 15px;
 }
 
 input {
@@ -23,4 +52,17 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+}
+
+a {
+  color: grey;
+  /* this removes the line under the links */
+  text-decoration: none;
 }
